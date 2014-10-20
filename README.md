@@ -1,13 +1,9 @@
-Arnode
+Arnode [![Build Status](http://img.shields.io/travis/marceloboeira/arnode.svg)](https://travis-ci.org/marceloboeira/arnode)
 ======
 
 Arnode is a simple NodeJS package that can be used to control your board.
 
-
 More information about it coming soon!
-
-
-
 
 # Examples:
 
