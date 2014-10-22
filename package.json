@@ -23,6 +23,10 @@
   },
   "homepage": "https://github.com/marceloboeira/arnode",
   "devDependencies": {
+    "assert": "^1.1.2",
     "mocha": "^2.0.1"
+  },
+  "dependencies": {
+    "events": "^1.0.2"
   }
 }
