@@ -2,7 +2,7 @@
   "name": "arnode",
   "version": "0.0.0",
   "description": "Simple Arduino + Node tool",
-  "main": "core.js",
+  "main": "arnode.js",
   "scripts": {
     "test": "echo \"0\""
   },
