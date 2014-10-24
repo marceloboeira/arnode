@@ -1,0 +1,25 @@
+{
+  "name": "Arnode",
+  "version": "0.0.0",
+  "description": "Simple Arduino + Node tool",
+  "main": "core.js",
+  "scripts": {
+    "test": "echo \"0\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marceloboeira/arnode.git"
+  },
+  "keywords": [
+    "arduino",
+    "node",
+    "js",
+    "arnode"
+  ],
+  "author": "Marcelo Boeira (me@marceloboeira.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marceloboeira/arnode/issues"
+  },
+  "homepage": "https://github.com/marceloboeira/arnode"
+}
