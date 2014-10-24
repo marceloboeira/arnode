@@ -27,6 +27,7 @@
     "mocha": "^2.0.1"
   },
   "dependencies": {
-    "events": "^1.0.2"
+    "events": "^1.0.2",
+    "serialport": "^1.4.6"
   }
 }
