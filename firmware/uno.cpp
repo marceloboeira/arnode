@@ -1,8 +1,11 @@
 #define AN_BAUD 9600
+#define AN_HANDSHAKE_IN "AN:HELLO_ARDUINO"
+#define AN_HANDSHAKE_OUT "AN:HELLO_NODE"
+#define AN_NL '\n'
 
 void setup() {
   Serial.begin(AN_BAUD);
-  Serial.println("AN:HANDSHAKE");
+  _waitForHandShake();
   pinMode(13, OUTPUT);
   digitalWrite(13, LOW);
 }
@@ -22,5 +25,15 @@ void loop(){
   }
 }
 
+void _waitForHandShake(){
+  bool handShaked = false;
+  while (!handShaked) {
+    String str = Serial.readStringUntil(AN_NL);
+    if (str == AN_HANDSHAKE_IN) {
+      Serial.write(AN_HANDSHAKE_OUT);
+      handShaked = true;
+    }
+  }
+}
 
 
