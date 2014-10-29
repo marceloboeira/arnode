@@ -10,9 +10,9 @@ var assert = require("assert");
 var data = {
   name: "MyTestBoard",
   model: Board.Models.UNO,
-  port: "/dev/ttyUSB0",
+  port: "/dev/ttyACM0",
   baud: 9600,
-  connect: false
+  connect: true
 };
 
 describe("Board", function(){
