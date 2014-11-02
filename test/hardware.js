@@ -4,8 +4,9 @@ var Board = Arnode.Board;
 var assert = require("assert");
 
 /**
- * Tests Fake Data
- * @type {Object}
+ * This tests must me executed with a board connected
+ * running the lastest firmware.
+ *
  */
 var data = {
   name: "UnoTestBoard",
@@ -22,6 +23,8 @@ describe("Board", function(){
       var t = new Board(data);
 
       t.on("connect", function(e) {
+
+
         console.log(e);
         console.log('connect');
       });
